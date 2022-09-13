@@ -9,7 +9,7 @@ import { postCreateValidation, sliderItemAddValidation  } from './validations.js
 import * as PostController from './controllers/PostController.js';
 import * as SlideController from './controllers/SlideController.js';
 
-mongoose.connect('mongodb+srv://admin:wwwwwww@cluster0.7yihlwo.mongodb.net/?retryWrites=true&w=majority',) 
+mongoose.connect(process.env.MONGODB_URI) 
 .then(() =>{console.log("DB ok")})
 .catch((err) => console.log("DB error", err))
 
