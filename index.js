@@ -82,7 +82,7 @@ const upload = multer({storage})
 //app.get('/', SlideController.getAll);
 app.delete('/admin/slider/:id', SlideController.remove);
 app.post('/admin/slider',  upload.single('image') ,sliderItemAddValidation, SlideController.create);
-////////////////////////////////////////
+//////////////////////////////////
  
 
 
