@@ -86,7 +86,7 @@ app.post('/admin/slider',  upload.single('image') ,sliderItemAddValidation, Slid
  
 
 
-
+console.log(process.env.PORT);
 
 app.listen(process.env.PORT || 4444, (err) => {
     if(err) {
